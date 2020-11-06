@@ -10,7 +10,7 @@ def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
     mail = user.mail
     nbCard = user.nbCard
     course = getCourse()
-    if courseName == "" :
+    if course == "" :
         print("error : not course actually")
         return 
     courseName = course.name
