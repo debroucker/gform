@@ -10,10 +10,10 @@ def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
     mail = user.mail
     nbCard = user.nbCard
     course = getCourse()
-    courseName = course.name
     if courseName == "" :
         print("error : not course actually")
         return 
+    courseName = course.name
     if test :
         url = "https://docs.google.com/forms/d/e/1FAIpQLSeTx6CaGAeQPirjCrxzSbuGfixkwtrKZDWikxZgEqI0dixs8w/formResponse"
         d = {

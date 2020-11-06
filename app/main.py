@@ -5,7 +5,7 @@ import platform
 tommy = User("debroucker", "tommy", "tommy.debroucker.etu@univ-lille.fr", "31705154")
 fname = "./data/courses.csv"
 fnameExcel = "./data/courses.xlsx"
-test = False
+test = True
 if platform.system == "Windows" :
     fname = "." + fname
     fnameExcel = "." + fnameExcel
