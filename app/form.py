@@ -4,6 +4,7 @@ from models import User, Course
 import saveData
 import datetime
 
+
 def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
     name = user.name
     fname = user.fname
@@ -43,6 +44,7 @@ def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
     else :
         print("error") 
 
+
 def createCourses() :
     #mercredi
     ang = Course("ANG1 (E. Dewulf)", datetime.time(hour=10, minute=20), 2, 2)
@@ -50,15 +52,11 @@ def createCourses() :
     icm = Course("ICM (J. Rouillard)", datetime.time(hour=16, minute=0), 2, 2)
     #jeudi
     bda = Course("BDA (F. Bossut)", datetime.time(hour=8, minute=0), 4, 3)
-    cp = Course("CP (J. Rakotobe)", datetime.time(hour=14, minute=0), 3, 3)
-    #vendredi
-    bda = Course("BDA (F. Bossut)", datetime.time(hour=8, minute=0), 4, 3)
-    cp = Course("CP (J. Rakotobe)", datetime.time(hour=14, minute=0), 3, 3)
     #vendredi
     c3p = Course("C3P (V. Aranega)", datetime.time(hour=8, minute=0), 4, 4)
-    gp = Course("GP (J-Y. Chauvier)", datetime.time(hour=13, minute=30), 3, 4)
+    ed = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 4)
     #list
-    return [ang, ro, icm, bda, cp, c3p, gp]
+    return [ang, ro, icm, bda, c3p, ed]
     
 
 def getCourse() : 
