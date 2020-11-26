@@ -52,11 +52,12 @@ def createCourses() :
     icm = Course("ICM (J. Rouillard)", datetime.time(hour=16, minute=0), 2, 2)
     #jeudi
     bda = Course("BDA (F. Bossut)", datetime.time(hour=8, minute=0), 4, 3)
+    ed1 = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 3)
     #vendredi
     c3p = Course("C3P (V. Aranega)", datetime.time(hour=8, minute=0), 4, 4)
-    ed = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 4)
+    ed2 = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 4)
     #list
-    return [ang, ro, icm, bda, c3p, ed]
+    return [ang, ro, icm, bda, c3p, ed1, ed2]
     
 
 def getCourse() : 
