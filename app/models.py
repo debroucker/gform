@@ -17,12 +17,11 @@ class User() :
         self.nbCard = nbCard
 
 #jeudi
-#car
-CAR = Course("CAR (L. Seinturi)", datetime.time(hour=8, minute=0), 4, 3)
+CAR = Course("CAR (L. Seinturi)", datetime.time(hour=8, minute=00), 4, 3)
 ED = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 3)
 #vendredi
 AFJE = Course("AFJE (F. Secchi)", datetime.time(hour=8, minute=00), 4, 4)
-ANG2 = Course("ANG2 (E. Dewulf)", datetime.time(hour=13, minute=30), 2, 3)
-PAI = Course("PAI (M. Balisco)", datetime.time(hour=16, minute=00), 2, 3)
+ANG2 = Course("ANG2 (E. Dewulf)", datetime.time(hour=13, minute=30), 2, 4)
+PAI = Course("PAI (M. Balisco)", datetime.time(hour=16, minute=00), 2, 4)
 
-COURSES = [CAR, ED, AFJE, ANG2, ]
+COURSES = [CAR, ED, AFJE, ANG2, PAI]
