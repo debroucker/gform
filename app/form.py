@@ -1,11 +1,9 @@
 import sys
 import requests
-from models import User, Course
-import saveData
+from models import User, Course, COURSES
 import datetime
 
-
-def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
+def sendToForm(user:User, test:bool) :
     name = user.name
     fname = user.fname
     mail = user.mail
@@ -40,29 +38,12 @@ def sendToForm(user:User, filename:str, filenameExcel:str, test:bool) :
     if code == "200" :
         print("submitted with : \n    - mail : " + mail + "\n    - name : " + name + "\n    - first name : " 
         + fname + "\n    - number card : " + nbCard + "\n    - course : " + courseName)
-        saveData.addInFile(filename, filenameExcel, course)
     else :
         print("error") 
-
-
-def createCourses() :
-    #mercredi
-    ang = Course("ANG1 (E. Dewulf)", datetime.time(hour=10, minute=20), 2, 2)
-    ro = Course("RO (N. Melab)", datetime.time(hour=14, minute=0), 2, 2)
-    icm = Course("ICM (J. Rouillard)", datetime.time(hour=16, minute=0), 2, 2)
-    #jeudi
-    bda = Course("BDA (F. Bossut)", datetime.time(hour=8, minute=0), 4, 3)
-    ed1 = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 3)
-    #vendredi
-    c3p = Course("C3P (V. Aranega)", datetime.time(hour=8, minute=0), 4, 4)
-    ed2 = Course("ED (L. Jourdan)", datetime.time(hour=14, minute=00), 3, 4)
-    #list
-    return [ang, ro, icm, bda, c3p, ed1, ed2]
     
-
 def getCourse() : 
     now = datetime.datetime.now()
-    courses = createCourses()
+    courses = COURSES
     weekday = int(now.weekday())
     time = now.time()
     for c in courses :
