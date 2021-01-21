@@ -36,8 +36,11 @@ def sendToForm(user:User, test:bool) :
     print("test : " + str(test))
     print("code http response : " + code)
     if code == "200" :
-        print("submitted with : \n    - mail : " + mail + "\n    - name : " + name + "\n    - first name : " 
-        + fname + "\n    - number card : " + nbCard + "\n    - course : " + courseName)
+        sout = "submitted with : \n    - mail : " + mail + "\n    - name : " + name + "\n    - first name : " 
+        sout += fname + "\n    - number card : " + nbCard + "\n    - course : " + courseName
+        if course.linkZoom != "" :
+            sout += "\n    - link : " + course.linkZoom
+        print(sout)
     else :
         print("error") 
     
