@@ -48,8 +48,7 @@ def getCourse() :
     now = datetime.datetime.now()
     courses = COURSES
     weekday = int(now.weekday())
-    time = now.time()
     for c in courses :
-        if weekday == c.dayOfWeek and c.begin <= time < c.ending :
+        if weekday == c.dayOfWeek and c.begin <= (now + datetime.timedelta(minutes = 10)).time() < c.ending :
             return c 
     return ""

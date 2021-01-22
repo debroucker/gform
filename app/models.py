@@ -20,10 +20,10 @@ class User() :
 
 #jeudi
 CAR = Course("CAR (L. Seinturier)", datetime.time(hour=8, minute=00), 4, 3, "")
-ED = Course("ED (L. Jourdan)", datetime.time(hour=13, minute=30), 3, 3, "https://univ-lille-fr.zoom.us/j/92055838734#success")
+ED = Course("ED (L. Jourdan)", datetime.time(hour=13, minute=30), 3, 3, "https://univ-lille-fr.zoom.us/j/92055838734?pwd=Z3pJU0xCc2t0dWlLTnZ2NUZjSnliZz09")
 #vendredi
-AFJE = Course("AFJE (F. Secchi)", datetime.time(hour=8, minute=00), 4, 4, "https://univ-lille-fr.zoom.us/j/94277888522#succes")
-ANG2 = Course("ANG2 (E. Dewulf)", datetime.time(hour=13, minute=30), 2, 4, "https://univ-lille-fr.zoom.us/j/5614377561#success")
-PAI = Course("PAI (M. Bilasco)", datetime.time(hour=16, minute=00), 2, 4, "https://univ-lille-fr.zoom.us/j/91408041832#succes")
+AFJE = Course("AFJE (F. Secchi)", datetime.time(hour=8, minute=00), 4, 4, "https://univ-lille-fr.zoom.us/j/94277888522")
+ANG2 = Course("ANG2 (E. Dewulf)", datetime.time(hour=13, minute=30), 2, 4, "https://univ-lille-fr.zoom.us/j/5614377561")
+PAI = Course("PAI (M. Bilasco)", datetime.time(hour=17, minute=00), 2, 4, "https://univ-lille-fr.zoom.us/j/91408041832?pwd=MTA1czJJWnR4V2NpQ3JNRXZreDBRdz09")
 
 COURSES = [CAR, ED, AFJE, ANG2, PAI]
