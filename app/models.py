@@ -24,6 +24,6 @@ ED = Course("ED (L. Jourdan)", datetime.time(hour=13, minute=30), 3, 3, "https:/
 #vendredi
 AFJE = Course("AFJE (F. Secchi)", datetime.time(hour=8, minute=00), 4, 4, "https://univ-lille-fr.zoom.us/j/94277888522")
 ANG2 = Course("ANG2 (E. Dewulf)", datetime.time(hour=13, minute=30), 2, 4, "https://univ-lille-fr.zoom.us/j/5614377561")
-PAI = Course("PAI (M. Bilasco)", datetime.time(hour=17, minute=00), 2, 4, "https://univ-lille-fr.zoom.us/j/91408041832?pwd=MTA1czJJWnR4V2NpQ3JNRXZreDBRdz09")
+PAI = Course("PAI (M. Bilasco)", datetime.time(hour=16, minute=00), 2, 4, "https://univ-lille-fr.zoom.us/j/91408041832?pwd=MTA1czJJWnR4V2NpQ3JNRXZreDBRdz09")
 
 COURSES = [CAR, ED, AFJE, ANG2, PAI]
