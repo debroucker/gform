@@ -19,7 +19,7 @@ class User() :
 
 
 #vendredi
-AFJE = Course("ISI (N. Agache and co.)", datetime.time(hour=9, minute=00), 3, 4, "")
+ISI = Course("ISI (N. Agache and co.)", datetime.time(hour=9, minute=00), 3, 4, "")
 PAI = Course("PAI (M. Bilasco)", datetime.time(hour=14, minute=00), 3, 4, "https://univ-lille-fr.zoom.us/j/91408041832?pwd=MTA1czJJWnR4V2NpQ3JNRXZreDBRdz09")
 
-COURSES = [CAR, ED, AFJE, ANG2, PAI]
+COURSES = [ISI, PAI]
